@@ -39,7 +39,7 @@ JSON log files are generated in a `./logs` directory within the project.
 * Run `bundle install`
 
 ## Usage
-Start an irb session and run `load telemetry_tester.rb`
+Start an irb session and run `load telemetry_tester.rb`. Execute examples below.
 
 ## Examples
 ```ruby
@@ -63,7 +63,7 @@ TelemetryTester.update_file('./foo/baz.txt', "Content here: #{Time.now.utc}", 'o
 TelemetryTester.delete_file('./foo/baz.txt')
 
 # Make a network request
-TelemetryTester.network_request({ name: 'John Smithjjjj' })
+TelemetryTester.network_request({ name: 'John Smith' })
 ```
 
 ## Setup for testing on Linux
@@ -77,7 +77,7 @@ docker pull --platform linux/x86_64 ubuntu
 docker run -it --platform linux/x86_64 ubuntu bash
 
 # Copy the project directory to the container:
-docker cp ~/{path to repo}/telemetry_tester_jh {container id}:/telemetry_tester
+docker cp ~/{path to repo}/telemetry_tester {container id}:/telemetry_tester
 
 # Install Dependencies:
   # Install ruby
@@ -103,5 +103,7 @@ Uncomment `force_color_prompt=yes`
   bundle install
   # Open an irb session
   irb
+  # Load the program
+  load 'telemetry_tester.rb'
   # Follow above code examples
 ```
