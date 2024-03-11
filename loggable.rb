@@ -49,6 +49,6 @@ module Loggable
   end
 
   def user_and_process_metadata
-    execute_command("ps -p #{Process.pid} -o user= -o ucomm=").split(' ')
+    execute_command("ps -p #{Process.pid} -o user= -o ucomm=")&.split(' ')
   end
 end

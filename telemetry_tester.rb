@@ -42,7 +42,7 @@ class TelemetryTester
   end
 
   def update_file(file_path, content, write_mode = 'a')
-    raise "Invalid write_mode argument: #{write_mode}" unless ['a', 'o'].include?(write_mode.downcase)
+    raise "Invalid write mode argument: #{write_mode}" unless ['a', 'o'].include?(write_mode.downcase)
 
     operator = write_mode.downcase == 'a' ? '>>' : '>'
     command = "echo '#{content}' #{operator} #{file_path}"
