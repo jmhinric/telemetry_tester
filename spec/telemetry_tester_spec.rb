@@ -1,7 +1,7 @@
 require 'spec_helper'
 require 'os'
-require_relative '../telemetry_tester'
-require_relative '../utilities'
+require_relative '../lib/telemetry_tester'
+require_relative '../lib/utilities'
 
 RSpec.describe TelemetryTester do
   let(:tester) { described_class.new }

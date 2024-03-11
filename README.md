@@ -38,8 +38,12 @@ JSON log files are generated in a `./logs` directory within the project.
 * Clone the git repository
 * Run `bundle install`
 
+## Specs
+
+Run with `rspec`
+
 ## Usage
-Start an irb session and run `load telemetry_tester.rb`. Execute examples below.
+Start an irb session and run `load lib/telemetry_tester.rb`. Execute examples below.
 
 ## Examples
 ```ruby
@@ -104,6 +108,6 @@ Uncomment `force_color_prompt=yes`
   # Open an irb session
   irb
   # Load the program
-  load 'telemetry_tester.rb'
+  load 'lib/telemetry_tester.rb'
   # Follow above code examples
 ```
